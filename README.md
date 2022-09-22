@@ -45,3 +45,10 @@ Auto administrados: Son las bases de datos que instalamos en nuestro pc, nos enc
 
 Administrados: No los llevamos nosotros, los ofrecen las nubes como Amazon, googles, azure.
 
+### Historia de las base de datos relaciones 
+
+Las bases de datos surgen de la necesidad de conservar la información más allá de lo que existe en la memoria RAM.
+
+Las bases de datos basadas en archivos eran datos guardados en texto plano, fáciles de guardar pero muy difíciles de consultar y por la necesidad de mejorar esto nacen las bases de datos relacionales. Su inventor Edgar Codd dejó ciertas reglas para asegurarse de que toda la filosofía de las bases de datos no se perdiera, estandarizando el proceso.
+
+12 reglas de la CODD (https://www.mindmeister.com/es/1079684487/las-12-reglas-de-codd-del-modelo-relacional?fullscreen=1#) 
