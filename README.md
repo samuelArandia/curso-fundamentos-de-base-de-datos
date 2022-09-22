@@ -14,6 +14,7 @@ Los medios digitales incluyen los discos duro, cd’s, etc. Se guardaba informac
     
 La nube fue una gran revolución, tiene muchas ventajas frente a los otros medios de almacenamiento, gracias a su fácil acceso desde cualquier parte del mundo.
 
+
 Tipos de bases de datos
 
 Relacionales
@@ -23,6 +24,9 @@ Relacionales
     Oracle
     PostgreSQL
     Mysql
+    
+![imagen](https://user-images.githubusercontent.com/83564327/191741202-7cde56f0-ed68-43ff-bee3-a4b787bcdcb2.png)
+    
 
 No relacionales
 
@@ -30,9 +34,14 @@ No relacionales
     Elasticsearch
     Neo4j
     MongoDB
+    
+![imagen](https://user-images.githubusercontent.com/83564327/191741253-f3cdbce9-0b9b-4685-90cf-118459a1ac28.png)
+    
+![imagen](https://user-images.githubusercontent.com/83564327/191741297-f9de9bc6-abaa-4cef-9ae3-f79395be5d1b.png)
 
 Servicios
 
-Auto administrados: Son las bases de datos que instalamos en nuestro pc, nos encargamos de la parte de mantenimiento, updates, etc.
+Auto administrados: Son las bases de datos que instalamos en nuestro pc, nos encargamos de la parte de mantenimiento, updates, etc. Nosotros no encargamos de ese la actulizaciones 
 
-Administrados: No los llevamos nosotros, los ofrecen las nubes como Amazon.
+Administrados: No los llevamos nosotros, los ofrecen las nubes como Amazon, googles, azure.
+
