@@ -1,7 +1,6 @@
 # Curso de fundamientos de base de datos 
 
-
-Historia
+### Historia
 
 Antiguamente se usaban tablillas de arcilla, eran poco transportables y generaban problemas.
 
