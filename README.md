@@ -104,4 +104,29 @@ Existen varios tipos de notaciones para los modelos entidad relacionamiento. Che
 ![imagen](https://user-images.githubusercontent.com/83564327/192128930-c0e4c61e-b0b4-40de-8b4f-76eec0d19551.png)
 
 
-### 
+### Relaciones 
+
+Las relaciones nos permiten ligar o unir nuestras diferentes entidades y se representan con rombos. Por convención se definen a través de verbos.
+
+Las relaciones tienen una propiedad llamada cardinalidad y tiene que ver con números. Cuántos de un lado pertenecen a cuántos del otro lado:
+
+Cardinalidad: 1 a 1
+
+![imagen](https://user-images.githubusercontent.com/83564327/200380544-1144271b-b161-4e98-bcfa-d16ce81d1cc4.png)
+
+Cardinalidad: 0 a 1
+
+![imagen](https://user-images.githubusercontent.com/83564327/200380806-8828ae1e-21b1-4ea4-8b17-9022a11e7377.png)
+
+    
+Cardinalidad: 1 a N
+
+![imagen](https://user-images.githubusercontent.com/83564327/200380995-bfc70e2a-d49a-45d1-a638-1bd43e124114.png)
+
+Cardinalidad: 0 a N
+
+![imagen](https://user-images.githubusercontent.com/83564327/200381121-112bb878-1bb0-44ff-8019-d814232d1fbc.png)
+
+
+![imagen](https://user-images.githubusercontent.com/83564327/200378595-d391f01f-9141-4184-aebf-212c7242de16.png)
+
