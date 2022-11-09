@@ -110,23 +110,74 @@ Las relaciones nos permiten ligar o unir nuestras diferentes entidades y se repr
 
 Las relaciones tienen una propiedad llamada cardinalidad y tiene que ver con números. Cuántos de un lado pertenecen a cuántos del otro lado:
 
-Cardinalidad: 1 a 1
+### Cardinalidad: 1 a 1
 
 ![imagen](https://user-images.githubusercontent.com/83564327/200380544-1144271b-b161-4e98-bcfa-d16ce81d1cc4.png)
 
-Cardinalidad: 0 a 1
+### Cardinalidad: 0 a 1
 
 ![imagen](https://user-images.githubusercontent.com/83564327/200380806-8828ae1e-21b1-4ea4-8b17-9022a11e7377.png)
 
     
-Cardinalidad: 1 a N
+### Cardinalidad: 1 a N
 
 ![imagen](https://user-images.githubusercontent.com/83564327/200380995-bfc70e2a-d49a-45d1-a638-1bd43e124114.png)
 
-Cardinalidad: 0 a N
+### Cardinalidad: 0 a N
 
 ![imagen](https://user-images.githubusercontent.com/83564327/200381121-112bb878-1bb0-44ff-8019-d814232d1fbc.png)
 
 
 ![imagen](https://user-images.githubusercontent.com/83564327/200378595-d391f01f-9141-4184-aebf-212c7242de16.png)
+
+### Cardinalidad: N A N 
+
+![imagen](https://user-images.githubusercontent.com/83564327/200642554-c1e72297-a737-46ee-b9f1-b2fc078d4433.png)
+
+### Diagrama Entidad relación
+
+![imagen](https://user-images.githubusercontent.com/83564327/200712947-22391d50-ecac-4e4c-8074-e1e9893c9ca9.png)
+
+
+### Digrama Físico: Tipo de datos y constraints 
+
+Para llevar a la práctica un diagrama debemos ir más allá y darle detalle con parámetros como:
+
+Tipos de dato:
+
+    Texto: CHAR(n), VARCHAR(n), TEXT
+    Números: INTEGER, BIGINT, SMALLINT, DECIMAL(n,s), NUMERIC(n,s)
+    Fecha/hora: DATE, TIME, DATETIME, TIMESTAMP
+    Lógicos: BOOLEAN
+
+![imagen](https://user-images.githubusercontent.com/83564327/200714188-cd03e31a-d13a-4348-af6c-eea3d4c3f697.png)
+
+Constraints (Restricciones)
+
+    NOT NULL: Se asegura que la columna no tenga valores nulos
+    UNIQUE: Se asegura que cada valor en la columna no se repita
+    PRIMARY KEY: Es una combinación de NOT NULL y UNIQUE
+    FOREIGN KEY: Identifica de manera única una tupla en otra tabla
+    CHECK: Se asegura que el valor en la columna cumpla una condición dada
+    DEFAULT: Coloca un valor por defecto cuando no hay un valor especificado
+    INDEX: Se crea por columna para permitir búsquedas más rápidas
+![imagen](https://user-images.githubusercontent.com/83564327/200715369-3f0261b9-7e7d-47b5-8efe-5bc3f49646c4.png)
+
+
+### Diagrama Físicoñ Normalización 
+
+La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos:
+
+    Primera forma normal (1FN): Atributos atómicos (Sin campos repetidos)
+    Segunda forma normal (2FN): Cumple 1FN y cada campo de la tabla debe depender de una clave única.
+    Tercera forma normal (3FN): Cumple 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias.
+    Cuarta forma normal (4FN): Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.
+
+![imagen](https://user-images.githubusercontent.com/83564327/200717562-18b099bd-0215-4ce3-bc13-82c68c68f5c4.png)
+
+![imagen](https://user-images.githubusercontent.com/83564327/200718861-5d0db6eb-ace7-4efe-a3ce-107480ac2dc8.png)
+
+![imagen](https://user-images.githubusercontent.com/83564327/200719444-fd5ccdeb-aac0-4866-a2f6-d6064367e427.png)
+![imagen](https://user-images.githubusercontent.com/83564327/200719463-7e9e2aff-97f5-4980-9003-48e87fd17253.png)
+
 
