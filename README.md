@@ -240,4 +240,56 @@ De esta manera, aunque parezca que la información se multiplicó, en realidad l
 
 Algunos autores precisan una 5FN que hace referencia a que después de realizar esta normalización a través de uniones (JOIN) permita regresar a la data original de la cual partió.
 
+## Diagrama fisico: normalizacion 
 
+Cuando se tiene 1 a muchos se coloca la llave foranea de muchos en la que tiene uno 
+
+![imagen](https://user-images.githubusercontent.com/83564327/200812990-693e6fd4-729f-413a-a2a5-e0783041f09d.png)
+![imagen](https://user-images.githubusercontent.com/83564327/200814100-46cbe80e-dc3f-4ad1-862c-2a59648f522a.png)
+
+
+### tabla intermedia 
+
+Es obligarotio que tengas las dos claves. Necesitamo una clave 
+
+Claves compuestas: Es un campo id esta dormado por dos id, la combinacion debe ser unica. Pero los id de cada tabla se hacen llave foranea, es decir que pueden tener los dos id
+
+![imagen](https://user-images.githubusercontent.com/83564327/200813410-f351a209-e576-4adc-89f1-807a6d48886b.png)
+
+
+### Instalación local de un RDBMS (Windows)
+
+Hay dos maneras de acceder a manejadores de bases de datos:
+
+    Instalar en máquina local un administrador de bases relacional.
+    Tener ambientes de desarrollo especiales o servicios cloud.
+
+En este curso usaremos MySQL porque tiene un impacto histórico siendo muy utilizado y además es software libre y gratuito. La versión 5.6.43 es compatible con la mayoría de aplicaciones y frameworks.
+
+    Root es el usuario principal que tendrá todos los permisos y por lo tanto en ambientes de producción hay que tener mucho cuidado al configurarlo.
+
+
+### ¿Qué es RDB y RDBMS?
+RDB (relational database)
+
+RDBMS (Relational DataBase Management System) Sistema Manejador de Bases de datos relacionales.
+
+La diferencia entre ambos es que las BBDD son un conjunto de datos pertenecientes ( o al menos en teoría) a un mismo tipo de contexto, que guarda los datos de forma persistente para un posterior uso, y el Sistema de gestión de BBDD o sistema manejador, es el que nos permite acceder a ella, es un software, herramienta que sirve de conexión entre las BBDD y el usuario (nos presenta una interfaz para poder gestionarla, manejarla).
+
+RDBMS
+
+    MySQL
+    PostgreSQL
+    Etc
+
+Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características.
+![imagen](https://user-images.githubusercontent.com/83564327/200974790-68d6787a-adc4-4bac-9bd9-ccdd91ed6f54.png)
+
+
+### Cliente Gráfico 
+
+MySQL en escritorio 
+
+### Servivicios adminitrativos o cloud 
+
+Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS sino que los contratan a otras personas. Estos servicios administrados cloud te permiten concentrarte en la base de datos y no en su administración y actualización.
