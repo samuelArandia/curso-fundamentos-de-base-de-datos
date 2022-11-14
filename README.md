@@ -441,3 +441,43 @@ Extract (Extraer)
 Transform (Transformar)
 Load (Cargar)
 ETL hace parte del proceso de integración de datos, mas aun es un componente muy importante que completa el resultado final en la relación de aplicaciones y sistemas.
+
+
+## Estructura básica de un Query
+
+Los queries son la forma en la que estructuramos las preguntas que se harán a la base de datos. Transforma preguntas en sintaxis.
+
+El query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera como WHERE.
+
+    La estrellita o asterisco (*) quiere decir que vamos a seleccionar todo sin filtrar campos.
+
+![imagen](https://user-images.githubusercontent.com/83564327/201523918-8913568e-b2ae-45d2-bf85-bcada0e4f401.png)
+
+## SELECT 
+
+    Es la primera parte de la estructura que necesitamos para hacer preguntas a la base de datos.
+    Se encarga de proyectar o mostrar los datos que le pedimos a la base de datos.
+    Si escribimos "SELECT (*) " estamos seleccionando todos los campos de la tabla que seleccionaremos con FROM .
+    Si, en cambio, escribimos "SELECT " y luego uno o varios nombres de los campos de la tabla, separados por coma, unicamente recibiremos dichos los datos de dichas columnas.
+    Por cada campo, podemos agregar un “_AS _ …” (por ejemplo, " titulo AS
+    encabezado ). Esto nos permitira mostrar las columnas con un nombre diferente: en este caso mostrara la columna titulo con el nombre encabezado.
+    Si indicamos " SELECT COUNT (*)", la funcion COUNT contara todas las filas de la tabla (usualmente se usa con algun filtro, para no elegir todas las columnas de la tabla).
+    El AS tambien se puede usar con la funcion COUNT de la siguiente manera:
+        SELECT COUNT (*) AS numeroDePosts
+
+
+![imagen](https://user-images.githubusercontent.com/83564327/201524539-fedf31c9-8aa3-4d6f-8fba-67a1ffa5a27b.png)
+
+
+## From 
+
+FROM indica de dónde se deben traer los datos y puede ayudar a hacer sentencias y filtros complejos cuando se quieren unir tablas. La sentencia compañera que nos ayuda con este proceso es JOIN.
+
+Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde está la intersección de conjuntos. Ayudan mucho para poder formular la sentencia JOIN de la manera adecuada dependiendo del query que se quiere hacer.
+
+![imagen](https://user-images.githubusercontent.com/83564327/201559553-96d14966-d416-4542-92f6-d13c89dd66bf.png)
+
+![imagen](https://user-images.githubusercontent.com/83564327/201647350-d7394d9b-c5dc-46b3-a3e4-4a2bc4b4d9ae.png)
+
+![imagen](https://user-images.githubusercontent.com/83564327/201559188-f3a82c67-adaf-4361-b045-2a4bce7b8575.png)
+
