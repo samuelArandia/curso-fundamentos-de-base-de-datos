@@ -481,3 +481,18 @@ Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde
 
 ![imagen](https://user-images.githubusercontent.com/83564327/201559188-f3a82c67-adaf-4361-b045-2a4bce7b8575.png)
 
+
+            SELECT * FROM usuarios LEFT JOIN posts ON usuarios.id = posts.usuario_id
+            WHERE posts.usuario_id IS NULL
+            UNION 
+            SELECT * FROM usuarios RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+            WHERE posts.usuario_id IS NULL;
+            
+## WHERE 
+WHERE es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de las características que elegimos.
+
+    La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información.
+    La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30.
+
+![imagen](https://user-images.githubusercontent.com/83564327/202327745-56888861-132f-430e-9deb-0b6f7829a344.png)
+
