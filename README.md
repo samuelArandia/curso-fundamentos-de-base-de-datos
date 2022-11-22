@@ -455,15 +455,15 @@ El query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera
 
 ## SELECT 
 
-    Es la primera parte de la estructura que necesitamos para hacer preguntas a la base de datos.
-    Se encarga de proyectar o mostrar los datos que le pedimos a la base de datos.
-    Si escribimos "SELECT (*) " estamos seleccionando todos los campos de la tabla que seleccionaremos con FROM .
-    Si, en cambio, escribimos "SELECT " y luego uno o varios nombres de los campos de la tabla, separados por coma, unicamente recibiremos dichos los datos de dichas columnas.
-    Por cada campo, podemos agregar un “_AS _ …” (por ejemplo, " titulo AS
-    encabezado ). Esto nos permitira mostrar las columnas con un nombre diferente: en este caso mostrara la columna titulo con el nombre encabezado.
-    Si indicamos " SELECT COUNT (*)", la funcion COUNT contara todas las filas de la tabla (usualmente se usa con algun filtro, para no elegir todas las columnas de la tabla).
-    El AS tambien se puede usar con la funcion COUNT de la siguiente manera:
-        SELECT COUNT (*) AS numeroDePosts
+Es la primera parte de la estructura que necesitamos para hacer preguntas a la base de datos.
+Se encarga de proyectar o mostrar los datos que le pedimos a la base de datos.
+Si escribimos "SELECT (*) " estamos seleccionando todos los campos de la tabla que seleccionaremos con FROM .
+Si, en cambio, escribimos "SELECT " y luego uno o varios nombres de los campos de la tabla, separados por coma, unicamente recibiremos dichos los datos de dichas columnas.
+Por cada campo, podemos agregar un “_AS _ …” (por ejemplo, " titulo AS encabezado ). Esto nos permitira mostrar las columnas con un nombre diferente: en este caso mostrara la columna titulo con el nombre encabezado. Si indicamos " SELECT COUNT (*)", la funcion COUNT contara todas las filas de la tabla (usualmente se usa con algun filtro, para no elegir todas las columnas de la tabla).
+
+El AS tambien se puede usar con la funcion COUNT de la siguiente manera:
+  
+    SELECT COUNT (*) AS numeroDePosts
 
 
 ![imagen](https://user-images.githubusercontent.com/83564327/201524539-fedf31c9-8aa3-4d6f-8fba-67a1ffa5a27b.png)
@@ -489,10 +489,10 @@ Los diagramas de Venn son círculos que se tocan en algún punto para ver dónde
             WHERE posts.usuario_id IS NULL;
             
 ## WHERE 
-WHERE es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de las características que elegimos.
+Es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de las características que elegimos.
 
-    La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información.
-    La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30.
+La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información.
+La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30.
     
 Un breve resumen del like y uso del %:
 – %termina_en
@@ -501,3 +501,6 @@ Un breve resumen del like y uso del %:
 
 ![imagen](https://user-images.githubusercontent.com/83564327/202327745-56888861-132f-430e-9deb-0b6f7829a344.png)
 
+## Utilizando la sentencia WHERE nulo y no nulo
+ 
+El valor nulo en una tabla generalmente es su valor por defecto cuando nadie le asignó algo diferente. La sintaxis para hacer búsquedas de datos nulos es IS NULL. La sintaxis para buscar datos que no son nulos es IS NOT NULL
