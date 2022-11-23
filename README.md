@@ -494,6 +494,7 @@ Es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de las ca
 La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información.
 La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30.
     
+    
 Un breve resumen del like y uso del %:
 – %termina_en
 – %en medio%
@@ -528,7 +529,16 @@ AVG Calcula el promedio
 COUNT Cuenta los registros de un campo
 SUM Suma los valores de un campo
 MAX Devuelve el maximo de un campo
+MIN Devuelve el mínimo de un campo
 
 ![imagen](https://user-images.githubusercontent.com/83564327/203461781-a07451ea-d9ec-42fd-be6d-c6ddf257a074.png)
 
-MIN Devuelve el mínimo de un campo
+## ORDER BY y HAVING
+
+La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar.
+
+    ASC sirve para ordenar de forma ascendente.
+    DESC sirve para ordenar de forma descendente.
+    LIMIT se usa para limitar la cantidad de resultados que arroja el query.
+
+HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
