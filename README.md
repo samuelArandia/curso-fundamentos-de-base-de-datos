@@ -504,3 +504,31 @@ Un breve resumen del like y uso del %:
 ## Utilizando la sentencia WHERE nulo y no nulo
  
 El valor nulo en una tabla generalmente es su valor por defecto cuando nadie le asignó algo diferente. La sintaxis para hacer búsquedas de datos nulos es IS NULL. La sintaxis para buscar datos que no son nulos es IS NOT NULL
+
+        SELECT * FROM posts WHERE usuario_id is NULL;
+        
+        
+        
+## GROUP BY 
+                    SELECT estatus, COUNT(*) posts_quantity 
+                    FROM posts GROUP BY  estatus;  
+
+                    SELECT YEAR(fecha_publicacion) AS post_year, COUNT(*) AS post_quantity 
+                    FROM  posts 
+                    GROUP BY post_year;
+
+                    SELECT MONTHNAME(fecha_publicacion) AS post_months, COUNT(*) AS post_quantity
+                    FROM posts
+                    GROUP BY post_months;
+                    
+GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios debe tener en cuenta para agrupar.
+
+Aparte de la función COUNT, podemos encontrar las siguientes funciones de agregado:
+AVG Calcula el promedio
+COUNT Cuenta los registros de un campo
+SUM Suma los valores de un campo
+MAX Devuelve el maximo de un campo
+
+![imagen](https://user-images.githubusercontent.com/83564327/203461781-a07451ea-d9ec-42fd-be6d-c6ddf257a074.png)
+
+MIN Devuelve el mínimo de un campo
