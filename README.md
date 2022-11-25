@@ -542,3 +542,17 @@ La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo
     LIMIT se usa para limitar la cantidad de resultados que arroja el query.
 
 HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
+
+                    SELECT MONTHNAME(fecha_publicacion) AS post_month, estatus, COUNT(*) AS post_quality 
+                    FROM posts 
+                    GROUP BY estatus, post_month
+                    HAVING post_month = 'april'
+                    ORDER BY post_month;
+                    
+## El interminable agujero de conejo (Nested queries)
+
+
+ Los Nested queries significan que dentro de un query podemos hacer otro query. Esto sirve para hacer join de tablas, estando una en memoria. También teniendo un query como condicional del otro.
+
+Este proceso puede ser tan profundo como quieras, teniendo infinitos queries anidados.
+Se le conoce como un producto cartesiano ya que se multiplican todos los registros de una tabla con todos los del nuevo query. Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar.
