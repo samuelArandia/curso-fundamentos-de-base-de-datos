@@ -583,3 +583,6 @@ De pregunta a Query
     GROUP BY: Los rubros por los que me interesa agrupar la información
     ORDER BY: El orden en que quiero presentar mi información
     HAVING: Los filtros que quiero que mis datos agrupados tengan
+
+
+![imagen](https://user-images.githubusercontent.com/83564327/204160284-a4521385-9e3c-4f2d-a2d1-f05006e00e88.png)
